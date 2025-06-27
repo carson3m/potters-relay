@@ -32,6 +32,7 @@ class TrackmanUDPRelay(threading.Thread):
         while self._running:
             try:
                 data, addr = self.sock.recvfrom(self.buffer_size)
+                print(f"[DEBUG] Got something from {addr}: {data[:100]}...")
                 print(f"[TrackmanRelay] 🟢 Received {len(data)} bytes from {addr}")
 
                 try:
