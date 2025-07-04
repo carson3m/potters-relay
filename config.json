@@ -1,5 +1,5 @@
 {
   "udp_port": 20998,
   "buffer_size": 16384,
-  "relay_url": "http://192.168.68.88:5050/api/receive_pitch"
+  "relay_url": "http://192.168.1.100:5050/api/receive_pitch"
 }
